@@ -30,12 +30,31 @@
                     Produkte
                 </h4>
 
-                <ul class="space-y-3 text-gray-300">
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Grila</a></li>
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Perde</a></li>
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Shtretër</a></li>
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Jastëkë</a></li>
-                </ul>
+                <?php $products_archive = get_post_type_archive_link('products'); ?>
+
+                <?php
+                            $product_terms = get_terms([
+                                'taxonomy'=>'product_category',
+                                'hide_empty'=>true,
+                                'parent'=>0
+                            ]);
+                        ?>
+
+                            <ul>
+                                <?php foreach($product_terms as $term): ?>
+
+                                    <li>
+                                        <a 
+                                            href="<?php echo get_term_link($term); ?>"
+                                            class="hover:text-[#c6a46c] transition"
+                                        >
+                                        <?php echo $term->name; ?>
+                                        </a>
+                                    </li>
+
+                                <?php endforeach; ?>
+                            </ul>
+
             </div>
 
             <!-- Projects -->
@@ -44,11 +63,30 @@
                     Projekte
                 </h4>
 
-                <ul class="space-y-3 text-gray-300">
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Hotele</a></li>
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Apartamente</a></li>
-                    <li><a href="#" class="hover:text-[#c6a46c] transition">Restorante</a></li>
-                </ul>
+                <?php $projects_archive = get_post_type_archive_link('projects'); ?>
+
+                <?php
+                            $project_terms = get_terms([
+                                'taxonomy'=>'project_category',
+                                'hide_empty'=>true,
+                                'parent'=>0
+                            ]);
+                        ?>
+
+                            <ul>
+                                <?php foreach($project_terms as $term): ?>
+
+                                    <li>
+                                        <a 
+                                            href="<?php echo get_term_link($term); ?>"
+                                            class="hover:text-[#c6a46c] transition"
+                                        >
+                                        <?php echo $term->name; ?>
+                                        </a>
+                                    </li>
+
+                                <?php endforeach; ?>
+                            </ul>
             </div>
 
             <!-- Contact -->
@@ -59,7 +97,7 @@
 
                 <ul class="space-y-3 text-gray-300 mb-6">
                     <li>Fier, Shqipëri</li>
-                    <li>Email: keli_llozana@hotmail.com</li>
+                    <li>Email: info.llozana@gmail.com</li>
                     <li>Tel: +355 69 20 97 771</li>
                 </ul>
 

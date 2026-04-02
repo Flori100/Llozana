@@ -160,6 +160,45 @@
                         Kontakt
                     </a>
 
+                    <!-- Social -->
+                    <div class="absolute right-10">
+                        <div class="flex gap-5"
+                        :class="scrolled || <?php echo is_front_page() ? 'false' : 'true'; ?> ? 'text-slate-900' : 'text-white'">
+
+                        <!-- Instagram -->
+                        <a href="https://instagram.com/llozana.group" target="_blank"
+                        class="hover:text-[#c6a46c] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6"
+                            fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 
+                                4.574 22 7.75 22h8.5C19.426 22 22 19.426 
+                                22 16.25v-8.5C22 4.574 19.426 2 16.25 
+                                2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 
+                                7.75v8.5A3.75 3.75 0 0 1 16.25 
+                                20h-8.5A3.75 3.75 0 0 1 4 
+                                16.25v-8.5A3.75 3.75 0 0 1 
+                                7.75 4zM12 7a5 5 0 1 0 0 10 
+                                5 5 0 0 0 0-10z"/>
+                            </svg>
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/p/Llozana-100056436835347/"
+                        target="_blank"
+                        class="hover:text-[#c6a46c] transition">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-6 h-6"
+                            fill="currentColor"
+                            viewBox="0 0 24 24">
+                                <path d="M13.5 22v-8h2.7l.4-3h-3.1V8.6c0-.9.3-1.6 
+                                1.7-1.6H17V4.2c-.3 0-1.3-.2-2.5-.2-2.5 
+                                0-4.2 1.5-4.2 4.3V11H7.5v3h2.8v8h3.2z"/>
+                            </svg>
+                        </a>
+
+                    </div>
+                    </div>
+
                 </nav>
 
             </div>
