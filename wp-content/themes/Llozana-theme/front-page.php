@@ -40,6 +40,7 @@ wp_reset_postdata();
                 <h1 class="text-6xl md:text-9xl font-semibold">
                     Live in Luxury
                 </h1>
+                <h1 class="hidden">Llozana</h1>
 
                 <p class="text-center py-16 mb-16 border-b-2 border-white">
                     "Sepse çdo ditë meriton të jetosh me stil."
