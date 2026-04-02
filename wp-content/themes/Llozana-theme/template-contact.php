@@ -9,7 +9,7 @@ get_header();
 
     <!-- HERO -->
     <section class="py-20 md:py-28 text-center px-6">
-        <p class="uppercase tracking-[0.35em] text-[11px] text-gray-500 mb-5">
+        <p class="uppercase tracking-[0.35em] text-[11px] text-gray-500 my-5">
             Llozana
         </p>
 

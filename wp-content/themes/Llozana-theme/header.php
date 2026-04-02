@@ -29,7 +29,23 @@
                     class="text-3xl font-light tracking-wide font-luxury text-slate-900"
                     :class="scrolled || <?php echo is_front_page() ? 'false' : 'true'; ?> ? '' : 'md:text-white'"
                 >
-                    LLozana
+                    <?php if (is_front_page()): ?>
+
+                        <!-- Front page -->
+                        <template x-if="scrolled">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/llozana-black.png" class="h-16">
+                        </template>
+
+                        <template x-if="!scrolled">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/llozana-white.png" class="h-16">
+                        </template>
+
+                    <?php else: ?>
+
+                        <!-- All other pages -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/llozana-black.png" class="h-16">
+
+                    <?php endif; ?>
                 </a>
 
                 <!-- MOBILE BUTTON -->
